@@ -23,7 +23,7 @@ const showProducts = (products) => {
         <p class="rating">Average rating: ${product.rating.rate}</p>
         <h2>Price: $ ${product.price}</h2>
         <div>
-          <button onclick="addToCart($git{product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
+          <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
           <button id="details-btn" class="btn btn-danger">Details</button>
         </div>
       </div>
